@@ -1,0 +1,13 @@
+version: "3"
+services:
+  dashcore:
+    build: .
+    volumes:
+      - dashcore:/home/node/app/mynode/data
+    ports:
+      - "3001:3001"
+      - "18332:18332"
+      - "8332:8332"
+
+volumes:
+  dashcore:
