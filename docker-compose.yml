@@ -1,13 +1,13 @@
 version: "3"
 services:
-  dashcore:
+  bchcore:
     build: .
     volumes:
-      - dashcore:/home/node/app/mynode/data
+      - bchcore:/home/node/app/bchnode/data
     ports:
       - "3001:3001"
       - "28332:28332"
       - "8332:8332"
 
 volumes:
-  dashcore:
+  bchcore:

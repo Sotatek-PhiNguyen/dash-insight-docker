@@ -1,0 +1,19 @@
+{
+  "network": "testnet",
+  "port": 3001,
+  "services": [
+    "bitcoind",
+    "web",
+    "insight-api",
+    "insight-ui"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "spawn": {
+        "datadir": "./data",
+        "exec": "./bitcoincashd"
+      }
+    }
+  }
+}
+
